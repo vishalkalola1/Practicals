@@ -1,0 +1,36 @@
+query Artists($search: String!, $first: Int!, $after: String) {
+  search {
+    artists(query: $search, first: $first, after: $after) {
+      nodes {
+        ...ArtistBasicFragment
+      }
+      pageInfo {
+        hasNextPage
+        hasPreviousPage
+        startCursor
+        endCursor
+      }
+      totalCount
+    }
+  }
+}
+
+fragment ArtistBasicFragment on Artist {
+  id
+  name
+  disambiguation
+  area {
+    id
+    name
+  }
+  type
+  recordings(first: 15, after: null){
+    nodes {
+      id
+      title
+      length
+      video
+    }
+  }
+}
+

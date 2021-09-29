@@ -1,0 +1,53 @@
+query Artist($id: ID!) {
+  node(id: $id) {
+    ...ArtistDetailsFragment
+  }
+}
+
+fragment ArtistDetailsFragment on Artist {
+  id
+  name
+  disambiguation
+  sortName
+  country
+  gender
+  type
+  lifeSpan{
+    begin
+    end
+    ended
+  }
+  tags {
+    nodes{
+      name
+      count
+    }
+  }
+  theAudioDB {
+    banner
+    logo
+    memberCount
+    genre
+    mood
+    style
+  }
+  area {
+    id
+    name
+  }
+  rating {
+    value
+    voteCount
+  }
+  recordings(first: 15, after: null){
+    nodes {
+      id
+      title
+      length
+      video
+    }
+  }
+}
+
+
+

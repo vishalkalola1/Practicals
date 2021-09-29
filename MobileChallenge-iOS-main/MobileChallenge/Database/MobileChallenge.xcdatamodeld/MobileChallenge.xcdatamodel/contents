@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="21A5248p" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Area_db" representedClassName="Area_db" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="artists" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Artists_db" inverseName="area" inverseEntity="Artists_db"/>
+    </entity>
+    <entity name="Artists_db" representedClassName="Artists_db" syncable="YES">
+        <attribute name="disambiguation" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="area" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Area_db" inverseName="artists" inverseEntity="Area_db"/>
+        <relationship name="recordings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recordings_db" inverseName="artists" inverseEntity="Recordings_db"/>
+    </entity>
+    <entity name="Recordings_db" representedClassName="Recordings_db" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="length" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="video" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="artists" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Artists_db" inverseName="recordings" inverseEntity="Artists_db"/>
+    </entity>
+    <elements>
+        <element name="Artists_db" positionX="-293.5946655273438" positionY="-63.31968688964844" width="107.9298706054688" height="133"/>
+        <element name="Recordings_db" positionX="-54" positionY="36" width="128" height="118"/>
+        <element name="Area_db" positionX="-319.3641357421875" positionY="219.1836242675781" width="128" height="88"/>
+    </elements>
+</model>
