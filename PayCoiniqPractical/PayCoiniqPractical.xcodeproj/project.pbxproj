@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C93D822126B48877008FABBD /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D822026B48877008FABBD /* PopupViewController.swift */; };
+		C947852D26B468EC007B77E3 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947852C26B468EC007B77E3 /* InputViewController.swift */; };
+		C947853026B468EC007B77E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C947852E26B468EC007B77E3 /* Main.storyboard */; };
+		C947853226B468EE007B77E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C947853126B468EE007B77E3 /* Assets.xcassets */; };
+		C947853526B468EE007B77E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C947853326B468EE007B77E3 /* LaunchScreen.storyboard */; };
+		C9CB647626B569CE00B566FE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB647526B569CE00B566FE /* AppCoordinator.swift */; };
+		C9CB647D26B569FF00B566FE /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB647926B569FF00B566FE /* Storyboard.swift */; };
+		C9CB647E26B569FF00B566FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB647A26B569FF00B566FE /* AppDelegate.swift */; };
+		C9CB647F26B569FF00B566FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB647B26B569FF00B566FE /* SceneDelegate.swift */; };
+		C9CB648426B56EB800B566FE /* InputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB648326B56EB800B566FE /* InputViewModel.swift */; };
+		C9CB648C26B57E7B00B566FE /* PayCoiniqPracticalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB648B26B57E7B00B566FE /* PayCoiniqPracticalTests.swift */; };
+		C9CB649A26B5844800B566FE /* PayCoiniqPracticalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB649926B5844800B566FE /* PayCoiniqPracticalUITests.swift */; };
+		C9CB64A226B59C1D00B566FE /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB64A126B59C1D00B566FE /* Security.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9CB648E26B57E7B00B566FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C947851D26B468EC007B77E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C947852426B468EC007B77E3;
+			remoteInfo = PayCoiniqPractical;
+		};
+		C9CB649C26B5844800B566FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C947851D26B468EC007B77E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C947852426B468EC007B77E3;
+			remoteInfo = PayCoiniqPractical;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C93D822026B48877008FABBD /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		C947852526B468EC007B77E3 /* PayCoiniqPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayCoiniqPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C947852C26B468EC007B77E3 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		C947852F26B468EC007B77E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C947853126B468EE007B77E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C947853426B468EE007B77E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C947853626B468EE007B77E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9CB647526B569CE00B566FE /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C9CB647926B569FF00B566FE /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		C9CB647A26B569FF00B566FE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9CB647B26B569FF00B566FE /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C9CB648326B56EB800B566FE /* InputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewModel.swift; sourceTree = "<group>"; };
+		C9CB648926B57E7B00B566FE /* PayCoiniqPracticalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayCoiniqPracticalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CB648B26B57E7B00B566FE /* PayCoiniqPracticalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCoiniqPracticalTests.swift; sourceTree = "<group>"; };
+		C9CB648D26B57E7B00B566FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9CB649726B5844800B566FE /* PayCoiniqPracticalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayCoiniqPracticalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CB649926B5844800B566FE /* PayCoiniqPracticalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCoiniqPracticalUITests.swift; sourceTree = "<group>"; };
+		C9CB649B26B5844800B566FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9CB64A126B59C1D00B566FE /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C947852226B468EC007B77E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CB648626B57E7B00B566FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CB649426B5844800B566FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C947851C26B468EC007B77E3 = {
+			isa = PBXGroup;
+			children = (
+				C947852726B468EC007B77E3 /* PayCoiniqPractical */,
+				C9CB648A26B57E7B00B566FE /* PayCoiniqPracticalTests */,
+				C9CB649826B5844800B566FE /* PayCoiniqPracticalUITests */,
+				C947852626B468EC007B77E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C947852626B468EC007B77E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C947852526B468EC007B77E3 /* PayCoiniqPractical.app */,
+				C9CB648926B57E7B00B566FE /* PayCoiniqPracticalTests.xctest */,
+				C9CB649726B5844800B566FE /* PayCoiniqPracticalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C947852726B468EC007B77E3 /* PayCoiniqPractical */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB648226B56E5A00B566FE /* Controllers */,
+				C9CB648126B56E5100B566FE /* ViewModels */,
+				C9CB647726B569FF00B566FE /* Application */,
+				C9CB647426B569CE00B566FE /* Coordinators */,
+				C947852E26B468EC007B77E3 /* Main.storyboard */,
+				C947853126B468EE007B77E3 /* Assets.xcassets */,
+				C947853326B468EE007B77E3 /* LaunchScreen.storyboard */,
+				C947853626B468EE007B77E3 /* Info.plist */,
+			);
+			path = PayCoiniqPractical;
+			sourceTree = "<group>";
+		};
+		C9CB647426B569CE00B566FE /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB647526B569CE00B566FE /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C9CB647726B569FF00B566FE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB64A126B59C1D00B566FE /* Security.swift */,
+				C9CB647926B569FF00B566FE /* Storyboard.swift */,
+				C9CB647A26B569FF00B566FE /* AppDelegate.swift */,
+				C9CB647B26B569FF00B566FE /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C9CB648126B56E5100B566FE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB648326B56EB800B566FE /* InputViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C9CB648226B56E5A00B566FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C947852C26B468EC007B77E3 /* InputViewController.swift */,
+				C93D822026B48877008FABBD /* PopupViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C9CB648A26B57E7B00B566FE /* PayCoiniqPracticalTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB648B26B57E7B00B566FE /* PayCoiniqPracticalTests.swift */,
+				C9CB648D26B57E7B00B566FE /* Info.plist */,
+			);
+			path = PayCoiniqPracticalTests;
+			sourceTree = "<group>";
+		};
+		C9CB649826B5844800B566FE /* PayCoiniqPracticalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB649926B5844800B566FE /* PayCoiniqPracticalUITests.swift */,
+				C9CB649B26B5844800B566FE /* Info.plist */,
+			);
+			path = PayCoiniqPracticalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C947852426B468EC007B77E3 /* PayCoiniqPractical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C947853926B468EE007B77E3 /* Build configuration list for PBXNativeTarget "PayCoiniqPractical" */;
+			buildPhases = (
+				C947852126B468EC007B77E3 /* Sources */,
+				C947852226B468EC007B77E3 /* Frameworks */,
+				C947852326B468EC007B77E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PayCoiniqPractical;
+			productName = PayCoiniqPractical;
+			productReference = C947852526B468EC007B77E3 /* PayCoiniqPractical.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9CB648826B57E7B00B566FE /* PayCoiniqPracticalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9CB649026B57E7B00B566FE /* Build configuration list for PBXNativeTarget "PayCoiniqPracticalTests" */;
+			buildPhases = (
+				C9CB648526B57E7B00B566FE /* Sources */,
+				C9CB648626B57E7B00B566FE /* Frameworks */,
+				C9CB648726B57E7B00B566FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9CB648F26B57E7B00B566FE /* PBXTargetDependency */,
+			);
+			name = PayCoiniqPracticalTests;
+			productName = PayCoiniqPracticalTests;
+			productReference = C9CB648926B57E7B00B566FE /* PayCoiniqPracticalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9CB649626B5844800B566FE /* PayCoiniqPracticalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9CB649E26B5844800B566FE /* Build configuration list for PBXNativeTarget "PayCoiniqPracticalUITests" */;
+			buildPhases = (
+				C9CB649326B5844800B566FE /* Sources */,
+				C9CB649426B5844800B566FE /* Frameworks */,
+				C9CB649526B5844800B566FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9CB649D26B5844800B566FE /* PBXTargetDependency */,
+			);
+			name = PayCoiniqPracticalUITests;
+			productName = PayCoiniqPracticalUITests;
+			productReference = C9CB649726B5844800B566FE /* PayCoiniqPracticalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C947851D26B468EC007B77E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C947852426B468EC007B77E3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C9CB648826B57E7B00B566FE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C947852426B468EC007B77E3;
+					};
+					C9CB649626B5844800B566FE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C947852426B468EC007B77E3;
+					};
+				};
+			};
+			buildConfigurationList = C947852026B468EC007B77E3 /* Build configuration list for PBXProject "PayCoiniqPractical" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C947851C26B468EC007B77E3;
+			productRefGroup = C947852626B468EC007B77E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C947852426B468EC007B77E3 /* PayCoiniqPractical */,
+				C9CB648826B57E7B00B566FE /* PayCoiniqPracticalTests */,
+				C9CB649626B5844800B566FE /* PayCoiniqPracticalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C947852326B468EC007B77E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C947853526B468EE007B77E3 /* LaunchScreen.storyboard in Resources */,
+				C947853226B468EE007B77E3 /* Assets.xcassets in Resources */,
+				C947853026B468EC007B77E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CB648726B57E7B00B566FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CB649526B5844800B566FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C947852126B468EC007B77E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CB647E26B569FF00B566FE /* AppDelegate.swift in Sources */,
+				C9CB64A226B59C1D00B566FE /* Security.swift in Sources */,
+				C947852D26B468EC007B77E3 /* InputViewController.swift in Sources */,
+				C9CB647F26B569FF00B566FE /* SceneDelegate.swift in Sources */,
+				C9CB647626B569CE00B566FE /* AppCoordinator.swift in Sources */,
+				C9CB647D26B569FF00B566FE /* Storyboard.swift in Sources */,
+				C9CB648426B56EB800B566FE /* InputViewModel.swift in Sources */,
+				C93D822126B48877008FABBD /* PopupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CB648526B57E7B00B566FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CB648C26B57E7B00B566FE /* PayCoiniqPracticalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CB649326B5844800B566FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CB649A26B5844800B566FE /* PayCoiniqPracticalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9CB648F26B57E7B00B566FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C947852426B468EC007B77E3 /* PayCoiniqPractical */;
+			targetProxy = C9CB648E26B57E7B00B566FE /* PBXContainerItemProxy */;
+		};
+		C9CB649D26B5844800B566FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C947852426B468EC007B77E3 /* PayCoiniqPractical */;
+			targetProxy = C9CB649C26B5844800B566FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C947852E26B468EC007B77E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C947852F26B468EC007B77E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C947853326B468EE007B77E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C947853426B468EE007B77E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C947853726B468EE007B77E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C947853826B468EE007B77E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C947853A26B468EE007B77E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SVKXCL5QB5;
+				INFOPLIST_FILE = PayCoiniqPractical/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andesinfotech.PayCoiniqPractical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C947853B26B468EE007B77E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SVKXCL5QB5;
+				INFOPLIST_FILE = PayCoiniqPractical/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andesinfotech.PayCoiniqPractical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C9CB649126B57E7B00B566FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SVKXCL5QB5;
+				INFOPLIST_FILE = PayCoiniqPracticalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andesinfotech.PayCoiniqPracticalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayCoiniqPractical.app/PayCoiniqPractical";
+			};
+			name = Debug;
+		};
+		C9CB649226B57E7B00B566FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SVKXCL5QB5;
+				INFOPLIST_FILE = PayCoiniqPracticalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andesinfotech.PayCoiniqPracticalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayCoiniqPractical.app/PayCoiniqPractical";
+			};
+			name = Release;
+		};
+		C9CB649F26B5844800B566FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SVKXCL5QB5;
+				INFOPLIST_FILE = PayCoiniqPracticalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andesinfotech.PayCoiniqPracticalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PayCoiniqPractical;
+			};
+			name = Debug;
+		};
+		C9CB64A026B5844800B566FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SVKXCL5QB5;
+				INFOPLIST_FILE = PayCoiniqPracticalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andesinfotech.PayCoiniqPracticalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PayCoiniqPractical;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C947852026B468EC007B77E3 /* Build configuration list for PBXProject "PayCoiniqPractical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C947853726B468EE007B77E3 /* Debug */,
+				C947853826B468EE007B77E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C947853926B468EE007B77E3 /* Build configuration list for PBXNativeTarget "PayCoiniqPractical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C947853A26B468EE007B77E3 /* Debug */,
+				C947853B26B468EE007B77E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9CB649026B57E7B00B566FE /* Build configuration list for PBXNativeTarget "PayCoiniqPracticalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CB649126B57E7B00B566FE /* Debug */,
+				C9CB649226B57E7B00B566FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9CB649E26B5844800B566FE /* Build configuration list for PBXNativeTarget "PayCoiniqPracticalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CB649F26B5844800B566FE /* Debug */,
+				C9CB64A026B5844800B566FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C947851D26B468EC007B77E3 /* Project object */;
+}

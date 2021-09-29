@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "2db-Vu-GpH"; */
+"2db-Vu-GpH.normalTitle" = "Confirmer";
+
+/* Class = "UIButton"; normalTitle = "Waiting"; ObjectID = "NWZ-0V-jFx"; */
+"NWZ-0V-jFx.normalTitle" = "Attendre";
+
+/* Class = "UILabel"; text = "Change Status"; ObjectID = "SbR-Jo-let"; */
+"SbR-Jo-let.text" = "Changer de statut";
+
+/* Class = "UIButton"; normalTitle = "Cancle"; ObjectID = "gkx-hy-QPK"; */
+"gkx-hy-QPK.normalTitle" = "Annuler";
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "kXi-Qe-z3x"; */
+"kXi-Qe-z3x.normalTitle" = "Fermer";

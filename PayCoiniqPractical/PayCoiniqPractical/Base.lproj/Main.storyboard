@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Owo-zD-ijD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="tl7-R5-5za">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Owo-zD-ijD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mA1-fB-pHx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.96316856149999996" green="0.24035045499999999" blue="0.45301181080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="09c-UO-vRO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-881" y="72"/>
+        </scene>
+        <!--Input-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="InputViewController" storyboardIdentifier="InputViewController" title="Input" id="BYZ-38-t0r" customClass="InputViewController" customModule="PayCoiniqPractical" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WpV-bE-Iyh">
+                                <rect key="frame" x="10" y="128" width="394" height="34"/>
+                                <accessibility key="accessibilityConfiguration" hint="textField" identifier="textField" label="textField"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7WC-WS-Yzc"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6K-Ft-AZJ">
+                                <rect key="frame" x="157" y="202" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" hint="popup" identifier="popup" label="popup"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HI4-Cl-psA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="fyy-Vf-zvV"/>
+                                </constraints>
+                                <state key="normal" title="Pop Up">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="popUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5yS-DE-MIi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="WpV-bE-Iyh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="3Ho-Is-SOV"/>
+                            <constraint firstItem="Z6K-Ft-AZJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KKd-4V-nyG"/>
+                            <constraint firstItem="Z6K-Ft-AZJ" firstAttribute="top" secondItem="WpV-bE-Iyh" secondAttribute="bottom" constant="40" id="L7j-GF-3na"/>
+                            <constraint firstItem="WpV-bE-Iyh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="TpD-zX-peE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WpV-bE-Iyh" secondAttribute="trailing" constant="10" id="p3t-pe-OeL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="WpV-bE-Iyh" id="78j-BF-NgL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="72"/>
+        </scene>
+        <!--Popup View Controller-->
+        <scene sceneID="ypG-b4-NG0">
+            <objects>
+                <viewController storyboardIdentifier="PopupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ScI-U6-UdL" customClass="PopupViewController" customModule="PayCoiniqPractical" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o52-rZ-EQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6V-Yu-SH5">
+                                <rect key="frame" x="41.5" y="179" width="331" height="538"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payconiq" translatesAutoresizingMaskIntoConstraints="NO" id="WKQ-cp-Z6Y">
+                                        <rect key="frame" x="101.5" y="20" width="128" height="128"/>
+                                        <accessibility key="accessibilityConfiguration" hint="logo" identifier="logo" label="logo">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="6u1-jj-xlz">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" secondItem="WKQ-cp-Z6Y" secondAttribute="height" multiplier="1:1" id="Hx9-71-cbL"/>
+                                        </constraints>
+                                        <variation key="heightClass=compact-widthClass=regular" hidden="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PayCoiniq" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLP-mq-LRm">
+                                        <rect key="frame" x="10" y="158" width="311" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" hint="title" identifier="title" label="title"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0OZ-DP-be3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ApW-Kb-AGZ">
+                                        <rect key="frame" x="20" y="468" width="291" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zR-dj-9q9">
+                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <accessibility key="accessibilityConfiguration" hint="reshuffle" identifier="reshuffle" label="reshuffle"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Reshuffle">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="reshuffleAction:" destination="ScI-U6-UdL" eventType="touchUpInside" id="pal-ui-pPs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqX-Ys-OFS">
+                                                <rect key="frame" x="165.5" y="0.0" width="125.5" height="50"/>
+                                                <color key="backgroundColor" red="0.87843137250000003" green="0.20784313730000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration" hint="dismiss" identifier="dismiss" label="dismiss"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Dismiss">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="dismissAction:" destination="ScI-U6-UdL" eventType="touchUpInside" id="hcJ-Yg-caq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jAj-wB-Tae"/>
+                                        </constraints>
+                                    </stackView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdk-wR-ILi">
+                                        <rect key="frame" x="10" y="198" width="311" height="262"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpk-E3-0EH">
+                                                <rect key="frame" x="20" y="10" width="271" height="20.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="discription" identifier="discription" label="discription"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Hpk-E3-0EH" firstAttribute="top" secondItem="Gdk-wR-ILi" secondAttribute="top" constant="10" id="hJJ-Di-RV3"/>
+                                            <constraint firstItem="Hpk-E3-0EH" firstAttribute="centerX" secondItem="Gdk-wR-ILi" secondAttribute="centerX" id="mez-pd-H3V"/>
+                                            <constraint firstItem="Hpk-E3-0EH" firstAttribute="left" secondItem="Gdk-wR-ILi" secondAttribute="left" constant="20" id="oPR-Ci-PY5"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hpk-E3-0EH" secondAttribute="trailing" constant="20" id="waw-O2-8h0"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hpk-E3-0EH" secondAttribute="bottom" constant="10" id="xdn-Qq-KdU"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21170127948989204" green="0.054181696722845472" blue="0.10257945417148762" alpha="0.30693334462691324" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zLP-mq-LRm" secondAttribute="trailing" constant="10" id="FA2-lM-LO2"/>
+                                    <constraint firstItem="zLP-mq-LRm" firstAttribute="leading" secondItem="V6V-Yu-SH5" secondAttribute="leading" constant="10" id="Liu-E6-DmO"/>
+                                    <constraint firstItem="Gdk-wR-ILi" firstAttribute="top" secondItem="zLP-mq-LRm" secondAttribute="bottom" id="NaJ-9v-Jkj"/>
+                                    <constraint firstItem="WKQ-cp-Z6Y" firstAttribute="centerX" secondItem="V6V-Yu-SH5" secondAttribute="centerX" id="ObF-Sd-7Oi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gdk-wR-ILi" secondAttribute="trailing" constant="10" id="QE2-xD-Vw6"/>
+                                    <constraint firstItem="WKQ-cp-Z6Y" firstAttribute="top" secondItem="V6V-Yu-SH5" secondAttribute="top" constant="20" id="aKw-s7-rGQ">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="ApW-Kb-AGZ" secondAttribute="bottom" constant="20" id="kBS-z0-c6e"/>
+                                    <constraint firstItem="ApW-Kb-AGZ" firstAttribute="leading" secondItem="V6V-Yu-SH5" secondAttribute="leading" constant="20" id="qRZ-ny-voR"/>
+                                    <constraint firstItem="Gdk-wR-ILi" firstAttribute="leading" secondItem="V6V-Yu-SH5" secondAttribute="leading" constant="10" id="uqc-Jf-pF2"/>
+                                    <constraint firstAttribute="trailing" secondItem="ApW-Kb-AGZ" secondAttribute="trailing" constant="20" id="wvR-rG-Upu"/>
+                                    <constraint firstItem="zLP-mq-LRm" firstAttribute="top" secondItem="WKQ-cp-Z6Y" secondAttribute="bottom" constant="10" id="xnk-eo-XsB"/>
+                                    <constraint firstItem="ApW-Kb-AGZ" firstAttribute="top" secondItem="Gdk-wR-ILi" secondAttribute="bottom" constant="8" id="z4G-u8-zBL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9OC-ac-T6x"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.2577371403" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V6V-Yu-SH5" firstAttribute="height" secondItem="o52-rZ-EQ5" secondAttribute="height" multiplier="0.6" id="NsZ-8u-4jv"/>
+                            <constraint firstItem="V6V-Yu-SH5" firstAttribute="centerX" secondItem="o52-rZ-EQ5" secondAttribute="centerX" id="Tsl-uo-N4G"/>
+                            <constraint firstItem="V6V-Yu-SH5" firstAttribute="width" secondItem="o52-rZ-EQ5" secondAttribute="width" multiplier="0.8" id="hvW-PE-akv"/>
+                            <constraint firstItem="V6V-Yu-SH5" firstAttribute="centerY" secondItem="o52-rZ-EQ5" secondAttribute="centerY" id="wb9-uh-rJn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="discriptionLabel" destination="Hpk-E3-0EH" id="NUp-ql-PjU"/>
+                        <outlet property="nameLabel" destination="zLP-mq-LRm" id="FOb-gP-TnP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQq-RG-Ai9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.6956521739131" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="payconiq" width="400" height="400"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
